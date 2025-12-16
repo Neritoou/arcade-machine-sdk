@@ -1,9 +1,8 @@
-from .values import BASE_RESOLUTION, BASE_HEIGHT, BASE_WIDTH, DEFAULT_FPS, MIN_FPS
+from .values import BASE_RESOLUTION, BASE_HEIGHT, BASE_WIDTH, DEFAULT_FPS
 
 __all__ = [
     "BASE_RESOLUTION", 
     "BASE_HEIGHT",
     "BASE_WIDTH",
-    "DEFAULT_FPS",
-    "MIN_FPS",
+    "DEFAULT_FPS"
 ]
