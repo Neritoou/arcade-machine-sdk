@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
-from typing import Dict, Any
+from typing import Any
 
-def load(file_path: str) -> Dict[str, Any]:
+def load(file_path: str) -> dict[str, Any]:
     """
     Carga un archivo JSON y devuelve un diccionario.
 
@@ -19,7 +19,7 @@ def load(file_path: str) -> Dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
-def save(file_path: str, data: Dict[str, Any]) -> None:
+def save(file_path: str, data: dict[str, Any]) -> None:
     """
     Guarda un diccionario como un archivo JSON.
 

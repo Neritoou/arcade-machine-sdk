@@ -1,6 +1,6 @@
-from .json import load_json, set_value_json
+from .json import load, save
 
 __all__ = [
-    "load_json", 
-    "set_value_json"
+    "load", 
+    "save"
 ]

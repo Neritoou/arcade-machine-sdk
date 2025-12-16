@@ -1,5 +1,3 @@
-from typing import List
-
 class GameMeta:
     """Clase que sigue el patrón Builder para construir metadatos de un juego."""
     
@@ -7,9 +5,9 @@ class GameMeta:
         self._title = ""
         self._description = ""
         self._release_date = ""
-        self._tags: List[str] = []
+        self._tags: list[str] = []
         self._group_number = -1
-        self._authors: List[str] = []
+        self._authors: list[str] = []
     
     def with_title(self, title: str) -> 'GameMeta':
         self._title = title
@@ -24,7 +22,7 @@ class GameMeta:
         self._release_date = release_date
         return self
     
-    def with_tags(self, tags: List[str]) -> 'GameMeta':
+    def with_tags(self, tags: list[str]) -> 'GameMeta':
         self._tags.extend(tags)
         return self
     
@@ -36,7 +34,7 @@ class GameMeta:
         self._group_number = group_number
         return self
     
-    def with_authors(self, authors: List[str]) -> 'GameMeta':
+    def with_authors(self, authors: list[str]) -> 'GameMeta':
         self._authors.extend(authors)
         return self
     
@@ -57,7 +55,7 @@ class GameMeta:
         return self._release_date
     
     @property
-    def tags(self) -> List[str]:
+    def tags(self) -> list[str]:
         return self._tags.copy()
     
     @property
@@ -65,7 +63,7 @@ class GameMeta:
         return self._group_number
     
     @property
-    def authors(self) -> List[str]:
+    def authors(self) -> list[str]:
         return self._authors.copy()
     
     def validate(self) -> None:
