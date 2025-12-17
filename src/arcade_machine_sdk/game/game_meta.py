@@ -1,7 +1,7 @@
 class GameMeta:
     """Clase que sigue el patrón Builder para construir metadatos de un juego."""
     
-    def __init__(self):
+    def __init__(self) -> None:
         self._title = ""
         self._description = ""
         self._release_date = ""
