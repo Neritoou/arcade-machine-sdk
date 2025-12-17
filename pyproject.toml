@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arcade-machine-sdk"
-version = "1.0.0"
+version = "1.0.1"
 description = "SDK oficial para crear juegos compatibles con el Arcade Machine Core."
 authors = [
     { name = "Neritoou" }

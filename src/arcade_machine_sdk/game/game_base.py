@@ -96,9 +96,6 @@ class GameBase(ABC):
         Ejecuta el juego de forma independiente sin necesidad del Core.
         Útil para desarrollo y testing.
         """
-        if not pygame.get_init():
-            pygame.init()
-
         screen = pygame.display.set_mode(BASE_RESOLUTION)
         pygame.display.set_caption(self.metadata.title)
         clock = pygame.time.Clock()
