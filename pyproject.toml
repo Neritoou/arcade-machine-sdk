@@ -4,25 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arcade-machine-sdk"
-version = "1.0.0"
+version = "1.0.1"
 description = "SDK oficial para crear juegos compatibles con el Arcade Machine Core."
 authors = [
     { name = "Neritoou" }
 ]
-license = { text = "MIT" }
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10"
-
-dependencies = []
+dependencies = [
+    "pygame>=2.6.0"
+]
 
 [project.urls]
 Homepage = "https://github.com/Neritoou/arcade-machine-sdk"
 Repository = "https://github.com/Neritoou/arcade-machine-sdk"
 
 [tool.setuptools]
-packages = [
-    "arcade_machine_sdk",
-    "arcade_machine_sdk.interfaces",
-    "arcade_machine_sdk.screen",
-    "arcade_machine_sdk.constants"
-]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+arcade_machine_sdk = ["py.typed"]
