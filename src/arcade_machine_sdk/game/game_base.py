@@ -87,7 +87,7 @@ class GameBase(ABC):
         """
         Devuelve la superficie actual en la que el juego se está dibujando.
         """
-        if self.__surface == None:
+        if not self.__surface:
             raise AttributeError("No hay ninguna superficie disponible")
         return self.__surface
 
